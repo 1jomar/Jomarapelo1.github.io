@@ -1,170 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Personal portfolio of Jomar R. Apelo, Computer Engineering Student.">
+
   <title>Jomar R. Apelo | Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
   <!-- NAVIGATION -->
   <header class="header">
     <nav class="nav container">
-      <!-- EDIT: your name or logo -->
-      <a href="#home" class="logo">Jomar R. Apelo<span>.</span></a>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+
+      <a href="#home" class="logo">Jomar<span>.</span></a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">
+        &#9776;
+      </button>
+
       <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Me</a></li>
       </ul>
+
     </nav>
   </header>
 
   <main>
-    <!-- HERO -->
+
+    <!-- HOME -->
     <section id="home" class="hero">
       <div class="container hero-grid">
+
         <div class="hero-text">
-          <p class="small">Hello, I'm</p>
-          <!-- EDIT: your full name -->
-          <h1>Your Name</h1>
-          <!-- EDIT: your title and intro -->
-          <p class="role">Computer Engineering Student</p>
-          <p class="lead">I enjoy building websites and electronics projects. Write a short sentence here about what you do and what you are looking for.</p>
-          <div class="buttons">
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+
+          <div class="availability">
+            <span class="status-dot"></span>
+            Welcome to my portfolio
           </div>
+
+          <p class="small">Hello, I'm</p>
+
+          <h1>Jomar R.<br><span>Apelo.</span></h1>
+
+          <p class="role">Computer Engineering Student</p>
+
+          <p class="lead">
+            Passionate about technology, programming, and innovative
+            solutions. I enjoy transforming creative ideas into
+            functional digital experiences and exploring the world
+            of computer engineering.
+          </p>
+
+          <div class="buttons">
+            <a href="#projects" class="btn">Explore My Projects <span>↗</span></a>
+            <a href="#contact" class="btn btn-ghost">Let's Connect</a>
+          </div>
+
+          <div class="hero-bottom">
+            <span>WEB DEVELOPMENT</span>
+            <span class="dot-separator">•</span>
+            <span>PROGRAMMING</span>
+            <span class="dot-separator">•</span>
+            <span>ENGINEERING</span>
+          </div>
+
         </div>
 
-        <!-- EDIT: replace the initials with your photo: <img src="photo.jpg" alt="Your photo"> -->
+        <!-- PROFILE PHOTO -->
         <div class="hero-visual">
-          <div class="photo">YN</div>
-          <span class="chip chip-1">Web Development</span>
-          <span class="chip chip-2">Electronics</span>
-          <span class="chip chip-3">Problem Solving</span>
+
+          <div class="photo-border">
+            <div class="photo">
+              <!-- Replace profile.jpg with your actual photo -->
+              <img src="images/profile.jpg"
+                   alt="Jomar R. Apelo"
+                   onerror="this.style.display='none';this.parentElement.classList.add('photo-fallback')">
+            </div>
+          </div>
+
+          <span class="chip chip-1">💻 Web Development</span>
+          <span class="chip chip-2">⚡ Electronics</span>
+          <span class="chip chip-3">✦ Creative Thinking</span>
+
+          <div class="photo-decoration"></div>
+
         </div>
+
       </div>
     </section>
+
 
     <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container">
-        <h2>About Me</h2>
-        <div class="two-col">
-          <!-- EDIT: your bio -->
-          <div class="about-text">
-            <p>Write a short introduction about yourself here. Talk about your studies, what you enjoy doing, and what you want to achieve as a developer or engineer.</p>
-            <p>Add a second paragraph about your hobbies, interests, or what you are currently learning.</p>
-          </div>
-          <!-- EDIT: your details -->
-          <ul class="info-card">
-            <li><strong>Location</strong><span>City, Country</span></li>
-            <li><strong>Education</strong><span>BS Computer Engineering</span></li>
-            <li><strong>Email</strong><span>youremail@example.com</span></li>
-            <li><strong>Status</strong><span>Open to opportunities</span></li>
-          </ul>
+
+        <div class="section-heading">
+          <span class="eyebrow">GET TO KNOW ME</span>
+          <h2>About <span>Me.</span></h2>
+          <p>A little introduction about who I am and what drives me.</p>
         </div>
+
+        <div class="two-col">
+
+          <div class="about-text">
+            <h3>Building ideas through technology.</h3>
+
+            <p>
+              I'm Jomar R. Apelo, a Bachelor of Science in Computer
+              Engineering student with an interest in software
+              development, electronics, and emerging technologies.
+            </p>
+
+            <p>
+              I enjoy learning new programming techniques, developing
+              interactive websites, and exploring how hardware and
+              software work together to solve real-world problems.
+            </p>
+
+            <p>
+              My goal is to continuously improve my technical
+              knowledge, gain practical experience, and become
+              a skilled professional in the technology industry.
+            </p>
+
+            <a href="#contact" class="text-link">Get in touch <span>↗</span></a>
+          </div>
+
+          <div class="info-card">
+
+            <div class="info-header">
+              <div class="info-icon">JA</div>
+              <div>
+                <h3>Personal Information</h3>
+                <p>Quick details about me</p>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <span>Full Name</span>
+              <strong>Jomar R. Apelo</strong>
+            </div>
+
+            <div class="info-row">
+              <span>Location</span>
+              <strong>Teresa, Philippines</strong>
+            </div>
+
+            <div class="info-row">
+              <span>Education</span>
+              <strong>BS Computer Engineering</strong>
+            </div>
+
+            <div class="info-row">
+              <span>Email</span>
+              <strong class="email-text">jomarapelo01@gmail.com</strong>
+            </div>
+
+            <div class="info-row">
+              <span>Interests</span>
+              <strong>Software & Hardware</strong>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
     </section>
+
 
     <!-- SKILLS -->
     <section id="skills" class="section alt">
       <div class="container">
-        <h2>Skills</h2>
-        <div class="grid three">
-          <!-- EDIT: add or remove skills in each group -->
-          <div class="skill-group">
-            <h3>Web</h3>
-            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-          </div>
-          <div class="skill-group">
-            <h3>Programming</h3>
-            <ul class="tags"><li>C++</li><li>Python</li><li>Git</li></ul>
-          </div>
-          <div class="skill-group">
-            <h3>Hardware &amp; Design</h3>
-            <ul class="tags"><li>Arduino</li><li>Microcontrollers</li><li>AutoCAD</li></ul>
-          </div>
+
+        <div class="section-heading">
+          <span class="eyebrow">WHAT I CAN DO</span>
+          <h2>My <span>Skills.</span></h2>
+          <p>Technologies and tools I use and continue to explore.</p>
         </div>
+
+        <div class="grid three">
+
+          <div class="skill-group">
+            <div class="skill-icon">⌘</div>
+            <h3>Web Development</h3>
+            <p>Creating responsive and interactive web experiences.</p>
+
+            <ul class="tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-icon">⌨</div>
+            <h3>Programming</h3>
+            <p>Developing logical solutions through programming.</p>
+
+            <ul class="tags">
+              <li>C++</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>Git & GitHub</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-icon">⚡</div>
+            <h3>Hardware & Design</h3>
+            <p>Exploring electronics and engineering technologies.</p>
+
+            <ul class="tags">
+              <li>Arduino</li>
+              <li>Microcontrollers</li>
+              <li>AutoCAD</li>
+              <li>Circuit Design</li>
+            </ul>
+          </div>
+
+        </div>
+
       </div>
     </section>
+
 
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <div class="container">
-        <h2>Projects</h2>
-        <div class="grid three">
-          <!-- EDIT: title, description, technologies. Copy an <article> block to add more -->
-          <article class="card">
-            <div class="card-img">Project Image</div>
-            <div class="card-body">
-              <h3>Project One</h3>
-              <p>Short description of your project goes here.</p>
-              <span class="tech">HTML &middot; CSS &middot; JS</span>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-img">Project Image</div>
-            <div class="card-body">
-              <h3>Project Two</h3>
-              <p>Short description of your project goes here.</p>
-              <span class="tech">Arduino &middot; C++</span>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-img">Project Image</div>
-            <div class="card-body">
-              <h3>Project Three</h3>
-              <p>Short description of your project goes here.</p>
-              <span class="tech">AutoCAD</span>
-            </div>
-          </article>
+
+        <div class="section-heading">
+          <span class="eyebrow">MY CREATIVE WORK</span>
+          <h2>Featured <span>Projects.</span></h2>
+          <p>A collection of digital ideas, applications, and engineering concepts.</p>
         </div>
+
+        <div class="grid three project-grid">
+
+          <!-- PROJECT 1 -->
+          <article class="card">
+
+            <div class="card-img dailycare">
+
+              <div class="project-image-content">
+                <div class="mockup-window">
+
+                  <div class="mockup-top">
+                    <span></span><span></span><span></span>
+                    <small>DailyCare Dashboard</small>
+                  </div>
+
+                  <div class="health-mockup">
+                    <div class="health-heading">
+                      <div>
+                        <small>YOUR HEALTH OVERVIEW</small>
+                        <h4>Stay Healthy ♡</h4>
+                      </div>
+                      <div class="health-avatar">+</div>
+                    </div>
+
+                    <div class="health-stats">
+                      <div><span>♥</span><strong>72</strong><small>Heart Rate</small></div>
+                      <div><span>◷</span><strong>8h</strong><small>Sleep</small></div>
+                      <div><span>✚</span><strong>98%</strong><small>Wellness</small></div>
+                    </div>
+
+                    <div class="health-chart">
+                      <div style="height:35%"></div>
+                      <div style="height:55%"></div>
+                      <div style="height:42%"></div>
+                      <div style="height:75%"></div>
+                      <div style="height:60%"></div>
+                      <div style="height:90%"></div>
+                      <div style="height:70%"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <span class="project-number">01 / 03</span>
+            </div>
+
+            <div class="card-body">
+              <span class="project-category">HEALTHCARE SYSTEM</span>
+              <h3>DailyCare <span>↗</span></h3>
+
+              <p>
+                A healthcare-focused digital project designed to
+                organize daily wellness information and promote
+                better personal health management.
+              </p>
+
+              <div class="project-tech">
+                <span>Healthcare</span>
+                <span>UI Design</span>
+                <span>Web App</span>
+              </div>
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 2 -->
+          <article class="card">
+
+            <div class="card-img taskflow">
+
+              <div class="project-image-content">
+                <div class="mockup-window">
+
+                  <div class="mockup-top">
+                    <span></span><span></span><span></span>
+                    <small>TaskFlow Workspace</small>
+                  </div>
+
+                  <div class="task-mockup">
+                    <div class="task-heading">
+                      <small>MY WORKSPACE</small>
+                      <h4>Today's Tasks ✦</h4>
+                    </div>
+
+                    <div class="task-progress">
+                      <div class="progress-info">
+                        <span>Daily Progress</span>
+                        <strong>75%</strong>
+                      </div>
+                      <div class="progress-track">
+                        <div></div>
+                      </div>
+                    </div>
+
+                    <div class="task-item">
+                      <span class="task-check checked">✓</span>
+                      <span>Complete website design</span>
+                      <small>DONE</small>
+                    </div>
+
+                    <div class="task-item">
+                      <span class="task-check checked">✓</span>
+                      <span>Review project files</span>
+                      <small>DONE</small>
+                    </div>
+
+                    <div class="task-item">
+                      <span class="task-check"></span>
+                      <span>Final presentation</span>
+                      <small>TODO</small>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <span class="project-number">02 / 03</span>
+            </div>
+
+            <div class="card-body">
+              <span class="project-category">PRODUCTIVITY APP · CONCEPT</span>
+              <h3>TaskFlow <span>↗</span></h3>
+
+              <p>
+                A modern productivity application concept featuring
+                organized task lists, progress tracking, and a clean
+                workspace for managing daily activities.
+              </p>
+
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 3 -->
+          <article class="card">
+
+            <div class="card-img circuitlab">
+
+              <div class="project-image-content">
+
+                <div class="circuit-board">
+
+                  <div class="circuit-heading">
+                    <span>⚡ CIRCUITLAB</span>
+                    <small>ENGINEERING PROJECT</small>
+                  </div>
+
+                  <svg viewBox="0 0 320 190" class="circuit-svg" role="img" aria-label="Electronic circuit illustration">
+
+                    <defs>
+                      <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+                        <circle cx="2" cy="2" r="1" fill="#315c63"/>
+                      </pattern>
+                    </defs>
+
+                    <rect width="320" height="190" fill="url(#dots)"/>
+
+                    <g fill="none" stroke="#40d9b0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M30 95 H85 V45 H130"/>
+                      <path d="M30 95 H85 V145 H130"/>
+                      <path d="M190 45 H235 V95 H290"/>
+                      <path d="M190 145 H235 V95"/>
+                      <path d="M160 65 V125"/>
+                      <path d="M85 95 H130"/>
+                      <path d="M190 95 H235"/>
+                    </g>
+
+                    <rect x="130" y="35" width="60" height="120" rx="7" fill="#142d36" stroke="#56e4bc" stroke-width="2"/>
+
+                    <g fill="#56e4bc">
+                      <circle cx="85" cy="45" r="5"/>
+                      <circle cx="85" cy="95" r="5"/>
+                      <circle cx="85" cy="145" r="5"/>
+                      <circle cx="235" cy="95" r="5"/>
+                      <circle cx="290" cy="95" r="5"/>
+                      <circle cx="160" cy="95" r="8"/>
+                    </g>
+
+                    <text x="160" y="80" fill="#a9ffe2" text-anchor="middle" font-size="8" font-family="Arial">MCU</text>
+                    <text x="160" y="116" fill="#a9ffe2" text-anchor="middle" font-size="8" font-family="Arial">01</text>
+
+                    <g stroke="#56e4bc" stroke-width="2">
+                      <path d="M125 48 h-9 M125 60 h-9 M125 72 h-9 M125 84 h-9 M125 96 h-9 M125 108 h-9 M125 120 h-9 M125 132 h-9"/>
+                      <path d="M195 48 h9 M195 60 h9 M195 72 h9 M195 84 h9 M195 96 h9 M195 108 h9 M195 120 h9 M195 132 h9"/>
+                    </g>
+
+                  </svg>
+
+                  <div class="circuit-bottom">
+                    <span>● SYSTEM ACTIVE</span>
+                    <span>V 1.0</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <span class="project-number">03 / 03</span>
+            </div>
+
+            <div class="card-body">
+              <span class="project-category">ELECTRONICS · CONCEPT</span>
+              <h3>CircuitLab <span>↗</span></h3>
+
+              <p>
+                An electronics and circuit design concept exploring
+                microcontroller connections, circuit layouts, and
+                practical computer engineering applications.
+              </p>
+
+              <div class="project-tech">
+                <span>Electronics</span>
+                <span>Arduino</span>
+                <span>Circuit Design</span>
+              </div>
+            </div>
+
+          </article>
+
+        </div>
+
       </div>
     </section>
+
 
     <!-- CONTACT -->
     <section id="contact" class="section alt">
       <div class="container">
-        <h2>Contact</h2>
-        <div class="two-col">
-          <div class="contact-info">
-            <p>Have a question or want to work together? Send me a message.</p>
-            <!-- EDIT: your email and social links -->
-            <ul class="contact-links">
-              <li><a href="mailto:youremail@example.com">youremail@example.com</a></li>
-              <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
-              <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
-              <li><a href="https://facebook.com/yourusername" target="_blank" rel="noopener">Facebook</a></li>
-            </ul>
-          </div>
-          <form class="form" id="contactForm" novalidate>
-            <label for="name">Name</label>
-            <input type="text" id="name" required />
-            <label for="email">Email</label>
-            <input type="email" id="email" required />
-            <label for="message">Message</label>
-            <textarea id="message" rows="4" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-            <p class="form-status" id="formStatus"></p>
-          </form>
+
+        <div class="section-heading">
+          <span class="eyebrow">LET'S CONNECT</span>
+          <h2>Get In <span>Touch.</span></h2>
+          <p>Have a question or an idea? Feel free to reach out.</p>
         </div>
+
+        <div class="two-col contact-grid">
+
+          <div class="contact-info">
+
+            <h3>Let's create something great together.</h3>
+
+            <p>
+              I'm always interested in learning, collaborating,
+              and exploring new opportunities in technology.
+              Feel free to send me a message!
+            </p>
+
+            <div class="contact-method">
+              <div class="contact-icon">✉</div>
+              <div>
+                <small>EMAIL ME</small>
+                <a href="mailto:jomarapelo01@gmail.com">jomarapelo01@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-method">
+              <div class="contact-icon">⌖</div>
+              <div>
+                <small>LOCATION</small>
+                <strong>Teresa, Philippines</strong>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+              <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+            </div>
+
+          </div>
+
+          <form class="form" id="contactForm" novalidate>
+
+            <h3>Send a Message</h3>
+            <p>Fill out the form below to compose an email.</p>
+
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit" class="btn">Compose Email ↗</button>
+
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+          </form>
+
+        </div>
+
       </div>
     </section>
+
   </main>
+
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>&copy; <span id="year">2026</span> Your Name. All rights reserved.</p>
+    <div class="container footer-content">
+      <a href="#home" class="logo">Jomar<span>.</span></a>
+
+      <p>© <span id="year">2026</span> Jomar R. Apelo. All rights reserved.</p>
+
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
   </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>
