@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="header">
+    <nav class="nav container">
+      <!-- EDIT: your name or logo -->
+      <a href="#home" class="logo">Your Name<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="small">Hello, I'm</p>
+          <!-- EDIT: your full name -->
+          <h1>Your Name</h1>
+          <!-- EDIT: your title and intro -->
+          <p class="role">Computer Engineering Student</p>
+          <p class="lead">I enjoy building websites and electronics projects. Write a short sentence here about what you do and what you are looking for.</p>
+          <div class="buttons">
+            <a href="#projects" class="btn">View Projects</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- EDIT: replace the initials with your photo: <img src="photo.jpg" alt="Your photo"> -->
+        <div class="hero-visual">
+          <div class="photo">YN</div>
+          <span class="chip chip-1">Web Development</span>
+          <span class="chip chip-2">Electronics</span>
+          <span class="chip chip-3">Problem Solving</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="two-col">
+          <!-- EDIT: your bio -->
+          <div class="about-text">
+            <p>Write a short introduction about yourself here. Talk about your studies, what you enjoy doing, and what you want to achieve as a developer or engineer.</p>
+            <p>Add a second paragraph about your hobbies, interests, or what you are currently learning.</p>
+          </div>
+          <!-- EDIT: your details -->
+          <ul class="info-card">
+            <li><strong>Location</strong><span>City, Country</span></li>
+            <li><strong>Education</strong><span>BS Computer Engineering</span></li>
+            <li><strong>Email</strong><span>youremail@example.com</span></li>
+            <li><strong>Status</strong><span>Open to opportunities</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid three">
+          <!-- EDIT: add or remove skills in each group -->
+          <div class="skill-group">
+            <h3>Web</h3>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <ul class="tags"><li>C++</li><li>Python</li><li>Git</li></ul>
+          </div>
+          <div class="skill-group">
+            <h3>Hardware &amp; Design</h3>
+            <ul class="tags"><li>Arduino</li><li>Microcontrollers</li><li>AutoCAD</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid three">
+          <!-- EDIT: title, description, technologies. Copy an <article> block to add more -->
+          <article class="card">
+            <div class="card-img">Project Image</div>
+            <div class="card-body">
+              <h3>Project One</h3>
+              <p>Short description of your project goes here.</p>
+              <span class="tech">HTML &middot; CSS &middot; JS</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">Project Image</div>
+            <div class="card-body">
+              <h3>Project Two</h3>
+              <p>Short description of your project goes here.</p>
+              <span class="tech">Arduino &middot; C++</span>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img">Project Image</div>
+            <div class="card-body">
+              <h3>Project Three</h3>
+              <p>Short description of your project goes here.</p>
+              <span class="tech">AutoCAD</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="two-col">
+          <div class="contact-info">
+            <p>Have a question or want to work together? Send me a message.</p>
+            <!-- EDIT: your email and social links -->
+            <ul class="contact-links">
+              <li><a href="mailto:youremail@example.com">youremail@example.com</a></li>
+              <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://facebook.com/yourusername" target="_blank" rel="noopener">Facebook</a></li>
+            </ul>
+          </div>
+          <form class="form" id="contactForm" novalidate>
+            <label for="name">Name</label>
+            <input type="text" id="name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            <p class="form-status" id="formStatus"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; <span id="year">2026</span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
